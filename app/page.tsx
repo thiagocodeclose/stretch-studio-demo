@@ -411,7 +411,7 @@ export default function Home() {
         {/* Left: Copy */}
         <div className="st-hero-copy">
           <p className="st-hero-eyebrow">Scottsdale, AZ · Assisted Stretching</p>
-          <h1 className="st-hero-h1 st-head">
+          <h1 data-cg-el="hero_headline_1" className="st-hero-h1 st-head">
             Flexibility is<br />a skill.<br />
             <strong>Learn it.</strong>
           </h1>
