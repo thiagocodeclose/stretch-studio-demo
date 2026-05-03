@@ -410,15 +410,15 @@ export default function Home() {
       <section className="st-hero">
         {/* Left: Copy */}
         <div className="st-hero-copy">
-          <p className="st-hero-eyebrow">Scottsdale, AZ · Assisted Stretching</p>
+          <p data-cg-el="hero_eyebrow" className="st-hero-eyebrow">Scottsdale, AZ · Assisted Stretching</p>
           <h1 data-cg-el="hero_headline_1" className="st-hero-h1 st-head">
             Flexibility is<br />a skill.<br />
             <strong>Learn it.</strong>
           </h1>
-          <p className="st-hero-sub">{siteData.hero.subtitle}</p>
+          <p data-cg-el="hero_subtitle" className="st-hero-sub">{siteData.hero.subtitle}</p>
           <div className="st-hero-actions">
-            <a href="#book" className="st-btn-primary">Book First Session</a>
-            <a href="#services" className="st-btn-outline">Our Services</a>
+            <a data-cg-el="hero_cta_primary" href="#book" className="st-btn-primary">Book First Session</a>
+            <a data-cg-el="hero_cta_secondary" href="#services" className="st-btn-outline">Our Services</a>
           </div>
           <div className="st-hero-stats">
             {siteData.stats.map((s, i) => (
