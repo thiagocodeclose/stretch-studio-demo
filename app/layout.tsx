@@ -1,7 +1,7 @@
 // @ts-nocheck
 import type { Metadata } from 'next';
 
-import { KorivaLivePreview } from '@/components/KorivaLivePreview';
+import { Garrison365LivePreview } from '@/components/Garrison365LivePreview';
 export const metadata: Metadata = {
   title: 'STRETCH Studio — Assisted Stretching & Flexibility | Scottsdale, AZ',
   description:
@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const cfg = await getKorivaConfig();
+  const cfg = await getGarrison365Config();
   const vars = buildCssVars(cfg?.brand);
   return (
     <html lang="en" style={vars as React.CSSProperties}>
-      <body>{children}<KorivaLivePreview /></body>
+      <body>{children}<Garrison365LivePreview /></body>
     </html>
   );
 }
